@@ -1,0 +1,25 @@
+.footer {
+    background-color: black;
+    margin-top: 20px;
+    &__links {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        list-style: none;
+    }   
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// Raccourci responsive voir _base.scss
+@include breakpoint(tablet) {}
+
+
+@include breakpoint(laptop) {}
+
+
+@include breakpoint(dekstop) {}

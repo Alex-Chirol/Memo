@@ -1,0 +1,27 @@
+/* CSS de base  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    /* Modification Header (HTML/index.html) */
+    background-color: black
+}
+
+/* Modification Header (HTML/index.html) */
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+/* Responsive Tablette */
+@media screen and (min-width: 481px) {}
+
+/* Responsive Tablette paysage / PC portable */
+@media screen and (min-width: 769px) {}
+
+/* Responsive Grand écran / TV */
+@media screen and (min-width: 1280px) {}

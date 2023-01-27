@@ -1,0 +1,29 @@
+// CSS de base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+
+
+// Création de raccourci pour les couleurs du site 
+$blue : #0D6EFD;
+$gray : #D9D9D9;
+$lightgray : #F8F9FA;
+
+
+// Création de breakpoint pour le responsive
+$breakpoints-up: (
+    'tablet' : 481px,
+    'laptop' : 769px,
+    'dekstop' : 1280px
+);
+
+@mixin breakpoint($size) {
+    @media screen and (min-width: map-get($breakpoints-up, $size)) {
+      @content; 
+    }
+};

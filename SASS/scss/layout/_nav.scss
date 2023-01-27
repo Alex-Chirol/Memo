@@ -1,0 +1,36 @@
+// SCSS de la Nav
+.nav {
+    height: 80px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-right: 20px;
+    }
+    li:hover {
+        transform: scale(1.2);
+    }
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+    &__logo {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: black;
+    }
+}
+
+// Raccourci responsive voir _base.scss
+@include breakpoint(tablet) {}
+
+
+@include breakpoint(laptop) {}
+
+
+@include breakpoint(dekstop) {}
